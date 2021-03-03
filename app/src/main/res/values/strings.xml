@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Wish App</string>
+    <string name="wish">Você poderá fazer apenas 3 desejos !</string>
+    <string name="what_wish">Qual é o seu desejo ?</string>
+    <string name="write_wish">Eu desejo ...</string>
+    <string name="finish_wish">Ops, você já esgotou seu limite de desejos hoje?</string>
+    <string name="wish_list">Sua lista de desejos foi:</string>
+    <string name="btn_wishSave">Salvar desejo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

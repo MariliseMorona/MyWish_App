@@ -31,6 +31,7 @@
             android:layout_height="288dp"
             android:fontFamily="@font/brasilero"
             tools:itemCount="3"
+            tools:listitem="@layout/item_wish"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,20 +40,20 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <Button
-            android:id="@+id/btnRemove"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorRosa"
-            android:text="@string/btn_wishRemove"
-            android:fontFamily="@font/brasilero"
-            android:layout_gravity="center"
+<!--    <Button-->
+<!--            android:id="@+id/btnRemove"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/colorRosa"-->
+<!--            android:text="@string/btn_wishRemove"-->
+<!--            android:fontFamily="@font/brasilero"-->
+<!--            android:layout_gravity="center"-->
 
-            android:onClick="onClickbtnEnviar"
-            tools:ignore="OnClick"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/wishList"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+<!--            android:onClick="onClickbtnEnviar"-->
+<!--            tools:ignore="OnClick"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/wishList"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
-        botaoInsert = findViewById(R.id.edtBotaoPedido)
-        wish = findViewById(R.id.edtWish)
+        botaoInsert = findViewById(R.id.btnWish)
+        wish = findViewById(R.id.txt_writeWish)
 
         botaoInsert.setOnClickListener {
         //    Handler(Looper.getMainLooper()).postDelayed({

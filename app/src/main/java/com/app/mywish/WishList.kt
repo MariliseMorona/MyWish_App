@@ -13,7 +13,7 @@ class WishList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wish_list)
 
-        val wishWished = intent.extras?.get("").toString()
+        val wishWished = intent.extras?.get("wish").toString()
 //            textView.text = wishWished
 
 //        var wishedList = mutableListOf<Wish>(

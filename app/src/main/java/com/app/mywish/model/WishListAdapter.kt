@@ -10,12 +10,12 @@ import com.app.mywish.R
 import com.app.mywish.WishList.Companion.listOfWish
 import com.app.mywish.model.Wish
 
-class WishListAdapter(private val listOfWish : MutableList<Wish>):
+class WishListAdapter(listOfWish : MutableList<Wish>):
 RecyclerView.Adapter<WishListAdapter.WishHolder>(){
 
     //Método para adicionar wish na listWish
-    fun adicionarWish(listOfWish: MutableList<Wish>, wish: Wish) {
-        listOfWish.add(wish)
+    fun adicionarWish(lista: MutableList<Wish>, wish: Wish) {
+        lista.add(wish)
         notifyDataSetChanged()
     }
 
@@ -27,7 +27,7 @@ RecyclerView.Adapter<WishListAdapter.WishHolder>(){
     //}
     //O que vai ser visualizado e inserido na RecycleView
     class WishHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var wishWished: TextView = view.findViewById(R.id.txt_wish)
+        val wishWished: TextView = view.findViewById(R.id.txt_itemWish)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WishHolder {

@@ -1,44 +1,39 @@
 package com.app.mywish
 
-import android.accounts.AccountManager.get
+
 import android.content.Intent
-import android.os.Parcelable
 import androidx.appcompat.app.AppCompatActivity
-import android.view.View
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
-import androidx.core.content.res.TypedArrayUtils.getText
-import android.os.Bundle as AndroidOsBundle
+
 
 class MainActivity : AppCompatActivity() {
 
-     lateinit var editWish: EditText
+    lateinit var botaoInsert: Button
+    lateinit var wish: EditText
 
 
-    override fun onCreate(savedInstanceState: AndroidOsBundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
 
-        editWish = findViewById(R.id.edtWish)
+        botaoInsert = findViewById(R.id.edtBotaoPedido)
+        wish = findViewById(R.id.edtWish)
 
+        botaoInsert.setOnClickListener {
+        //    Handler(Looper.getMainLooper()).postDelayed({
+                val telaList = Intent(this, WishList::class.java)
+                telaList.putExtra("wish", wish.text)
+                wish.setText("")
+                wish.requestFocus()
+                startActivity(telaList)
 
-
-    }
-        fun onClickBtnEnviar(){
-        var wish = editWish.getText().toString()
-
-        var destinadoraActivity = Intent(this, WishList::class.java)
-
-       lateinit var wishMake: AndroidOsBundle
-
-        wishMake.putExtra(wish)
-
-        destinadoraActivity.putExtras(wishMake)
-
-        startActivity(destinadoraActivity)
+           // })
         }
-
+    }
 }
 

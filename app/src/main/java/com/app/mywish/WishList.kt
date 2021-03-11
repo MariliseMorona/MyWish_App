@@ -2,45 +2,51 @@ package com.app.mywish
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.app.mywish.model.Wish
 import com.app.mywish.model.WishListAdapter
 
 class WishList : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wish_list)
 
-        var wishedList = mutableListOf<Wish>(
-            Wish(wish = " ")
-        )
+        val wishWished = intent.extras?.get("").toString()
+//            textView.text = wishWished
+
+//        var wishedList = mutableListOf<Wish>(
+//            Wish(wish = "texto"))
 
         var rvWished = findViewById<RecyclerView>(R.id.wishList)
-        var addWish = findViewById<Button>(R.id.btnWish)
-        var removeWish = findViewById<Button>(R.id.btnRemove)
+//      var addWish = findViewById<Button>(R.id.btnWish)
+//      var removeWish = findViewById<Button>(R.id.btnRemove)
 
-        var adapterWish = WishListAdapter(wishedList)
-            rvWished.adapter = adapterWish
+        var adapterWish = WishListAdapter(listOfWish)
+        rvWished.adapter = adapterWish
+        adapterWish.adicionarWish(listOfWish, Wish(wishWished))
 
-            addWish.setOnClickListener{
-                adapterWish.adicionarWish(
-                    Wish(wish = "teste")
-                )
-            }
-        removeWish.setOnClickListener{
-            adapterWish.removeWish()
-                if (it.isClickable){
-
-                    removeWish.getHint()
-                    Wish(wish = "" )
-                }
-}
         rvWished.layoutManager = LinearLayoutManager(this)
-
-
-           // fazerPedido.adapter.notifyDataSetChanged()
-
-        }
     }
+
+    companion object{
+        val listOfWish: MutableList<Wish> = mutableListOf(
+
+        )
+    }
+}
+
+//            addWish.setOnClickListener{
+//                adapterWish.adicionarWish(
+//                    Wish(wish = "")
+//                )
+//            }
+//        removeWish.setOnClickListener{
+//            adapterWish.removeWish()
+//                if (it.isClickable){
+//
+//                    removeWish.getHint()
+//                    Wish(wish = "")
+//                }
+//}

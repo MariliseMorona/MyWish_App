@@ -1,3 +1,5 @@
 package com.app.mywish.model
 
-class Wish (var wish: String)
+class  Wish(val wish: String){
+
+}

@@ -42,7 +42,3 @@ class MainActivity : AppCompatActivity() {
 
 }
 
-private fun Parcelable.putExtra(wish: String) {
-
-}
-

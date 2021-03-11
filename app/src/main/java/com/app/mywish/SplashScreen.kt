@@ -14,6 +14,8 @@ class SplashScreen : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
+
+
             val novaTela = Intent(this, MainActivity::class.java)
             startActivity(novaTela)
             finish()

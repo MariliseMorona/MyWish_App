@@ -31,7 +31,7 @@ RecyclerView.Adapter<WishListAdapter.WishHolder>(){
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WishHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_wish_list, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_wish, parent, false)
         return WishHolder(view)
     }
 

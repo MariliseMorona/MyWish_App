@@ -8,6 +8,8 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.Button
 import android.widget.EditText
+import kotlinx.android.synthetic.main.activity_wish_list.*
+import kotlinx.android.synthetic.main.activity_wish_list.view.*
 
 
 class MainActivity : AppCompatActivity() {

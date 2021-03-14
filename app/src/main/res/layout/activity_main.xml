@@ -8,77 +8,85 @@
         tools:context=".MainActivity"
         android:orientation="vertical"
         android:background="@color/colorAccent">
-
-    <TextView
-            android:id="@+id/txt_makeWish"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="@string/what_wish"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            android:textSize="25dp"
-            android:fontFamily="@font/brasilero"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.093">
-
-    </TextView>
-
-    <ImageView
-            android:layout_width="400dp"
-            android:layout_height="600dp"
-            android:src="@drawable/ic_genio"
-            android:id="@+id/img_genio"
-            tools:layout_editor_absoluteY="63dp"
-            tools:layout_editor_absoluteX="-9dp"
-            tools:ignore="MissingConstraints">
-
-    </ImageView>
     <LinearLayout
-            android:layout_height="100dp"
-            android:layout_width="300dp"
-            android:background="@color/colorPrimary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.952"
-            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
             android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/linearLayout2">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-
-        <EditText
-                android:id="@+id/txt_writeWish"
+        <TextView
+                android:id="@+id/txt_makeWish"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/write_wish"
+                android:text="@string/what_wish"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
                 android:fontFamily="@font/brasilero"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintHorizontal_bias="0.05"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.54">
+                android:textAlignment="center"
+                tools:layout_editor_absoluteY="90dp"
+                tools:layout_editor_absoluteX="77dp">
 
-        </EditText>
-        <Button
-                android:id="@+id/btnWish"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/colorRosa"
-                android:text="@string/btn_wishSave"
-                android:fontFamily="@font/brasilero"
-                android:layout_gravity="center"
-                tools:layout_editor_absoluteY="444dp"
-                tools:layout_editor_absoluteX="161dp"
-                android:onClick="onClickbtnEnviar"
-                tools:ignore="OnClick"/>
+        </TextView>
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:src="@drawable/ic_genio"
+                android:id="@+id/img_genio"
+                tools:layout_editor_absoluteY="133dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="55dp">
 
+        </ImageView>
+        <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:background="@drawable/background_caixa"
+                android:layout_height="100dp"
+                android:layout_width="300dp"
+                android:textAlignment="center"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteY="547dp"
+                tools:layout_editor_absoluteX="55dp">
+
+
+            <EditText
+                    android:id="@+id/txt_writeWish"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:hint="@string/write_wish"
+                    android:fontFamily="@font/brasilero"
+                    android:textSize="20dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.54">
+
+            </EditText>
+            <Button
+                    android:id="@+id/btnWish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_background"
+                    android:text="@string/btn_wishSave"
+                    android:fontFamily="@font/brasilero"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteY="444dp"
+                    tools:layout_editor_absoluteX="161dp"
+                    android:onClick="onClickbtnEnviar"
+                    tools:ignore="OnClick"
+                    android:layout_marginTop="13dp"/>
+
+        </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

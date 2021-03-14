@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.app.mywish.R
+import com.app.mywish.WishList
 import com.app.mywish.WishList.Companion.listOfWish
 import com.app.mywish.model.Wish
 
@@ -18,6 +19,11 @@ RecyclerView.Adapter<WishListAdapter.WishHolder>(){
         lista.add(wish)
         notifyDataSetChanged()
     }
+
+    //Método paa remover pedidos duplicados
+//    fun <Wish> MutableList<WishList>.removeDuplicates(): Boolean {
+//        val set = mutableSetOf<Wish>()
+//        return retainAll { set.add(it) }
 
     //Método para remover wish da listWish
     //fun removeWish(listOfWish: MutableList<Wish>, wish: Wish) {
@@ -56,5 +62,9 @@ RecyclerView.Adapter<WishListAdapter.WishHolder>(){
     override fun getItemCount(): Int {
 
         return listOfWish.size
-    }}
+    }
+
+
+    }
+
 

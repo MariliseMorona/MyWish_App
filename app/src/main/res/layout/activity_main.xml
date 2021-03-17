@@ -78,7 +78,7 @@
                     android:background="@drawable/btn_background"
                     android:text="@string/btn_wishSave"
                     android:fontFamily="@font/brasilero"
-                    android:textSize="10dp"
+                    android:textSize="15dp"
                     android:layout_gravity="center"
                     tools:layout_editor_absoluteY="444dp"
                     tools:layout_editor_absoluteX="161dp"

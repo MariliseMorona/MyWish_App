@@ -4,6 +4,8 @@
     <string name="what_wish">O que você deseja?</string>
     <string name="write_wish">Eu desejo ...</string>
     <string name="finish_wish">Ops, você já esgotou seu limite de desejos hoje!</string>
+    <string name="btn_poxa">Poxa, que pena</string>
+    <string name="btn_pena">Ops, você já esgotou seu limite de desejos hoje!</string>
     <string name="wish_list">Seus desejos foram:</string>
     <string name="btn_wishSave">Salvar desejo</string>
     <string name="btn_wishRemove">Remover desejo</string>

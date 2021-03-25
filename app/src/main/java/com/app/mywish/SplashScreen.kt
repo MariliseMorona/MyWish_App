@@ -18,10 +18,10 @@ class SplashScreen : AppCompatActivity() {
 
             val novaTela = Intent(this, MainActivity::class.java)
             startActivity(novaTela)
+            finish()
 
 
-
-        }, 3000)
+        }, 2500)
 
     }
 
